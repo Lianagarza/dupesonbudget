@@ -3,18 +3,27 @@
 body {
 	font-family: Irish Grover; 
 }
-
+img{
+	max-width: 100%;
+}
 nav{
 	width: 100%;
+	list-style: none;
+	position: absolute;
 }
+
 nav ul{
 	margin: 2rem;
 	list-style: none;
  	display: flex;
 
 }
-nav ul li {
+nav ul li a{
 	margin-right: 2rem;
+	font-size: 30px;
+	text-decoration: none;
+	color: #FFF;
+
 }
 
 nav img.logo{
@@ -25,11 +34,15 @@ nav img.logo{
 
 nav ul li {
 	text-decoration: none;
+	display: flex;
 }
+nav ul li.dupes{
+	margin-right: auto;
 
+}
 header{
-	width: 100vw;
-	height: 100vw;
+	width: 100%;
+	height: 100vh;
 	background: #FE72C1;
 	background-image: url(../image/background.jpg);
 	background-size: cover;
@@ -42,12 +55,50 @@ header{
 
 header h1{
 	margin-top: 0;
-	font-size: 65;
-	line-height: 5;
+	font-size: 65px;
+	line-height: 5px;
 }
 
+
+}
 header p{
 	scroll-margin-left: 0;
-	font-size: 28;
-	line-height: 26;
+	font-size: 65px;
+	line-height: 26px;
+}
+.btn{
+	background: #FF37A6;
+	padding: 15px 30px;
+	color: FFF;
+
+}
+
+footer{
+	gap: 20px;
+	color: #FFF;
+}
+section{
+
+	display: flex;
+	width: 100%;
+	gap:	40px;
+	font-size: 30px;
+	
+}
+section a{
+	width: auto;
+	background: #B29895;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul li a{
+	color: #fff;
+}
+section.hype{
+	background: #FF37A6;
+	color: #fff;
+	text-align: center;
+	gap:	40px;
 }
